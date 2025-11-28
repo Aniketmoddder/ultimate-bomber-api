@@ -338,7 +338,7 @@ app.get('/bomb', async (req, res) => {
 app.get('/health', (req, res) => {
   res.json({
     status: 'âœ… Healthy',
-    server: 'Splexxo Ultimate Bomber API',
+    server: 'TOJI Ultimate Bomber API',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
     memory: process.memoryUsage(),
