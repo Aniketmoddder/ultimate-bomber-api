@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 // Configuration
-const YOUR_API_KEYS = ["TOJI"];
+const YOUR_API_KEYS = ["Tojizec"];
 const CACHE_TIME = 3600 * 1000;
 const CACHE_FOLDER = '/tmp/cache';
 const LOG_FILE = '/tmp/bomb_log.txt';
@@ -208,7 +208,7 @@ app.get('/', (req, res) => {
       '/health': 'Health check'
     },
     total_apis: BOMBING_APIS.length,
-    usage: 'GET /bomb?phone=9876543210&key=TOJI'
+    usage: 'GET /bomb?phone=9876543210&key=Tojizec'
   });
 });
 
@@ -222,7 +222,7 @@ app.get('/bomb', async (req, res) => {
     return res.status(400).json({
       error: 'Missing parameters',
       example: {
-        "url": "/bomb?phone=9876543210&key=TOJI",
+        "url": "/bomb?phone=9876543210&key=Tojizec",
         "parameters": {
           "phone": "10 digit phone number",
           "key": "API key"
